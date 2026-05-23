@@ -633,16 +633,9 @@
         <div class="form-group" style="margin-bottom:0">
           <p style="font-size:0.9rem; font-weight:300; color:var(--text-body); line-height:1.8; margin-bottom:1.5rem; margin-top:1.5rem;">Whether you're ready to sell or simply exploring your options, we welcome the conversation. Fill out the form and we'll be in touch within one business day.</p>
         </div>
-        <!-- Success message (hidden until form submitted) -->
-        <div id="form-success" style="display:none; background:var(--navy-light); border:1px solid var(--gold); padding:2rem; margin-top:1.5rem;">
-          <p style="font-family:'Barlow Condensed',sans-serif; font-size:1rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">✓ Inquiry Received</p>
-          <p style="font-size:0.9rem; font-weight:300; color:var(--text-body); line-height:1.7;">Thank you for reaching out. Craig will be in touch within one business day. All information is kept strictly confidential.</p>
-        </div>
-
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/mredllnk" method="POST">
-          <!-- Redirect back to same page after submit (Formspree uses this) -->
           <input type="hidden" name="_subject" value="New Business Inquiry — Steadfast Holdings" />
-          <input type="hidden" name="_next" value="" />
+          <input type="hidden" name="_next" value="https://steadfastholdco.com?success=true" />
 
           <div class="form-row">
             <div class="form-group">
@@ -721,40 +714,17 @@
       nav.style.padding = window.scrollY > 60 ? '1rem 5%' : '1.5rem 5%';
     });
 
-    // Formspree AJAX submission
-    const form = document.getElementById('contact-form');
-    const submitBtn = document.getElementById('submit-btn');
-    const successMsg = document.getElementById('form-success');
-
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
-      submitBtn.textContent = 'Sending…';
-      submitBtn.disabled = true;
-
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-          form.style.display = 'none';
-          successMsg.style.display = 'block';
-          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          submitBtn.textContent = 'Error — Try Again';
-          submitBtn.style.background = '#8b2020';
-          submitBtn.style.color = '#fff';
-          submitBtn.disabled = false;
-        }
-      } catch (err) {
-        submitBtn.textContent = 'Error — Try Again';
-        submitBtn.style.background = '#8b2020';
-        submitBtn.style.color = '#fff';
-        submitBtn.disabled = false;
+    // Show success banner if redirected back after form submission
+    if (window.location.search.includes('success=true')) {
+      const contact = document.getElementById('contact');
+      if (contact) {
+        const banner = document.createElement('div');
+        banner.style.cssText = 'background:var(--navy-light);border:1px solid var(--gold);padding:2rem;margin-bottom:2rem;';
+        banner.innerHTML = '<p style="font-family:\'Barlow Condensed\',sans-serif;font-size:1rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">✓ Inquiry Received</p><p style="font-size:0.9rem;font-weight:300;color:var(--text-body);line-height:1.7;">Thank you for reaching out. Craig will be in touch within one business day. All information is kept strictly confidential.</p>';
+        contact.insertBefore(banner, contact.firstChild);
+        contact.scrollIntoView({ behavior: 'smooth' });
       }
-    });
+    }
   </script>
 </body>
 </html>
