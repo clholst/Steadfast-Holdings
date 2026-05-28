@@ -1,412 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steadfast Holdings, LLC | Minnesota Business Acquisitions</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<!-- saved from url=(0044)file:///Users/homemac/Downloads/index_8.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craig Holst | Steadfast Holdings, LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./index_files/css2" rel="stylesheet">
   <style>
     :root {
-      --navy: #0d1b2a;
-      --navy-mid: #162032;
-      --navy-light: #1e2f44;
-      --gold: #c9a84c;
-      --gold-light: #e2c47a;
-      --gold-dim: #8a6e2f;
-      --cream: #f5f0e8;
-      --cream-dim: #d9d1c0;
-      --white: #ffffff;
-      --text-body: #b8c2cc;
-      --border: rgba(201, 168, 76, 0.2);
+      --navy: #0d1b2a; --navy-mid: #162032; --navy-light: #1e2f44;
+      --gold: #c9a84c; --gold-light: #e2c47a; --gold-dim: #8a6e2f;
+      --cream: #f5f0e8; --cream-dim: #d9d1c0; --white: #ffffff;
+      --text-body: #b8c2cc; --border: rgba(201, 168, 76, 0.2);
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; background: var(--navy); color: var(--cream); overflow-x: hidden; }
 
-    body {
-      font-family: 'Barlow', sans-serif;
-      background: var(--navy);
-      color: var(--cream);
-      overflow-x: hidden;
-    }
-
-    /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 1.5rem 5%;
-      background: rgba(13, 27, 42, 0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      transition: padding 0.3s;
+      padding: 1.5rem 5%; background: rgba(13,27,42,0.92);
+      backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); transition: padding 0.3s;
     }
-    .nav-logo {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.15rem; font-weight: 600; letter-spacing: 0.15em;
-      color: var(--gold); text-transform: uppercase; text-decoration: none;
-    }
+    .nav-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; text-decoration: none; }
     .nav-logo span { color: var(--cream); font-weight: 300; }
     .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--cream-dim);
-      text-decoration: none; transition: color 0.25s;
-    }
+    .nav-links a { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream-dim); text-decoration: none; transition: color 0.25s; }
     .nav-links a:hover { color: var(--gold); }
-    .nav-cta {
-      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--navy);
-      background: var(--gold); padding: 0.65rem 1.5rem;
-      text-decoration: none; transition: background 0.25s;
-    }
+    .nav-cta { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy); background: var(--gold); padding: 0.65rem 1.5rem; text-decoration: none; transition: background 0.25s; }
     .nav-cta:hover { background: var(--gold-light); }
 
-    /* ── HERO ── */
-    .hero {
-      min-height: 100vh;
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 10rem 5% 6rem;
-      position: relative; overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute; inset: 0; z-index: 0;
-      background:
-        radial-gradient(ellipse 60% 50% at 80% 40%, rgba(201,168,76,0.07) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 10% 70%, rgba(30,47,68,0.8) 0%, transparent 60%),
-        linear-gradient(160deg, #0d1b2a 0%, #162032 60%, #0d1b2a 100%);
-    }
-    .hero-grid {
-      position: absolute; inset: 0; z-index: 0;
-      background-image:
-        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-    .hero-content { position: relative; z-index: 1; max-width: 780px; }
-    .hero-eyebrow {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.25em;
-      text-transform: uppercase; color: var(--gold);
-      display: flex; align-items: center; gap: 1rem;
-      margin-bottom: 2rem;
-      opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
-    }
-    .hero-eyebrow::before {
-      content: ''; display: block; width: 40px; height: 1px; background: var(--gold);
-    }
-    .hero-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(3rem, 6vw, 5.5rem);
-      font-weight: 300; line-height: 1.05;
-      color: var(--white); margin-bottom: 2rem;
-      opacity: 0; animation: fadeUp 0.8s 0.4s forwards;
-    }
+    /* HERO */
+    .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 8rem 5% 5rem; position: relative; overflow: hidden; gap: 4rem; }
+    .hero-bg { position: absolute; inset: 0; z-index: 0; background: radial-gradient(ellipse 60% 50% at 80% 40%, rgba(201,168,76,0.07) 0%, transparent 70%), linear-gradient(160deg, #0d1b2a 0%, #162032 60%, #0d1b2a 100%); }
+    .hero-grid { position: absolute; inset: 0; z-index: 0; background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 60px 60px; }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.8s 0.2s forwards; }
+    .hero-eyebrow::before { content: ''; display: block; width: 40px; height: 1px; background: var(--gold); }
+    .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 5rem); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.8s 0.4s forwards; }
     .hero-title em { font-style: italic; color: var(--gold); }
-    .hero-desc {
-      font-size: 1.05rem; font-weight: 300; line-height: 1.8;
-      color: var(--text-body); max-width: 560px; margin-bottom: 3rem;
-      opacity: 0; animation: fadeUp 0.8s 0.6s forwards;
-    }
-    .hero-actions {
-      display: flex; gap: 1rem; flex-wrap: wrap;
-      opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
-    }
-    .btn-primary {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em;
-      text-transform: uppercase; color: var(--navy);
-      background: var(--gold); padding: 1rem 2.5rem;
-      text-decoration: none; transition: background 0.25s, transform 0.2s;
-      display: inline-block;
-    }
+    .hero-desc { font-size: 1.05rem; font-weight: 300; line-height: 1.8; color: var(--text-body); max-width: 520px; margin-bottom: 2.5rem; opacity: 0; animation: fadeUp 0.8s 0.6s forwards; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s 0.8s forwards; }
+    .btn-primary { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--navy); background: var(--gold); padding: 1rem 2.5rem; text-decoration: none; transition: background 0.25s, transform 0.2s; display: inline-block; }
     .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
-    .btn-secondary {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em;
-      text-transform: uppercase; color: var(--gold);
-      border: 1px solid var(--gold); padding: 1rem 2.5rem;
-      text-decoration: none; transition: background 0.25s, color 0.25s;
-      display: inline-block;
-    }
+    .btn-secondary { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 1rem 2.5rem; text-decoration: none; transition: background 0.25s, color 0.25s; display: inline-block; }
     .btn-secondary:hover { background: rgba(201,168,76,0.1); }
 
-    .hero-stats {
-      position: absolute; right: 5%; bottom: 8%; z-index: 1;
-      display: flex; flex-direction: column; gap: 2rem; align-items: flex-end;
-      opacity: 0; animation: fadeLeft 0.8s 1s forwards;
-    }
-    .stat { text-align: right; }
-    .stat-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.8rem; font-weight: 300; color: var(--gold); line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--text-body); margin-top: 0.3rem;
-    }
-    .stat-divider { width: 60px; height: 1px; background: var(--border); margin-left: auto; margin-top: 0.5rem; }
+    .hero-photo-wrap { position: relative; z-index: 1; opacity: 0; animation: fadeLeft 0.9s 0.5s forwards; }
+    .hero-photo-frame { position: relative; display: inline-block; }
+    .hero-photo-frame::before { content: ''; position: absolute; top: -12px; right: -12px; bottom: 12px; left: 12px; border: 2px solid var(--gold); opacity: 0.4; z-index: 0; }
+    .hero-photo-frame img { width: 100%; max-width: 420px; display: block; position: relative; z-index: 1; filter: grayscale(15%); }
+    .hero-photo-badge { position: absolute; bottom: -1.5rem; left: -1.5rem; background: var(--gold); color: var(--navy); padding: 1rem 1.5rem; z-index: 2; }
+    .hero-photo-badge-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+    .hero-photo-badge-title { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; margin-top: 0.15rem; opacity: 0.8; }
 
-    /* ── SECTION COMMONS ── */
+    /* SECTIONS */
     section { padding: 7rem 5%; }
-    .section-label {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.25em;
-      text-transform: uppercase; color: var(--gold);
-      display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
-    }
+    .section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
     .section-label::before { content:''; width:30px; height:1px; background:var(--gold); }
-    .section-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300;
-      color: var(--white); line-height: 1.15;
-    }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; color: var(--white); line-height: 1.15; }
     .section-title em { font-style: italic; color: var(--gold); }
+    .gold-line { width: 60px; height: 2px; background: var(--gold); margin: 1.5rem 0; }
 
-    /* ── ABOUT ── */
+    /* ABOUT / CRAIG */
     #about { background: var(--navy-mid); }
-    .about-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 6rem; align-items: center; margin-top: 4rem;
-    }
-    .about-text p {
-      font-size: 1rem; font-weight: 300; line-height: 1.9;
-      color: var(--text-body); margin-bottom: 1.5rem;
-    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; margin-top: 4rem; }
+    .about-text p { font-size: 1rem; font-weight: 300; line-height: 1.9; color: var(--text-body); margin-bottom: 1.5rem; }
     .about-text p strong { color: var(--cream); font-weight: 500; }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
+    .about-stat { background: var(--navy-light); border-left: 2px solid var(--gold); padding: 1.2rem 1.5rem; }
+    .about-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--gold); line-height: 1; }
+    .about-stat-label { font-size: 0.78rem; font-weight: 400; color: var(--text-body); margin-top: 0.3rem; line-height: 1.4; }
     .about-pillars { display: flex; flex-direction: column; gap: 1.5rem; }
-    .pillar {
-      border-left: 2px solid var(--gold);
-      padding: 1rem 0 1rem 1.5rem;
-    }
-    .pillar-title {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1rem; font-weight: 600; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem;
-    }
+    .pillar { border-left: 2px solid var(--gold); padding: 1rem 0 1rem 1.5rem; }
+    .pillar-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
     .pillar p { font-size: 0.9rem; font-weight: 300; color: var(--text-body); line-height: 1.6; }
 
-    /* ── SECTORS ── */
+    /* SECTORS */
     #sectors { background: var(--navy); }
     .sectors-intro { max-width: 600px; margin-bottom: 4rem; }
     .sectors-intro p { font-size: 1rem; font-weight: 300; line-height: 1.8; color: var(--text-body); margin-top: 1.5rem; }
-    .sectors-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
-      background: var(--border);
-    }
-    .sector-card {
-      background: var(--navy);
-      padding: 2.5rem 2rem;
-      transition: background 0.3s;
-      position: relative; overflow: hidden;
-    }
-    .sector-card::before {
-      content: ''; position: absolute;
-      bottom: 0; left: 0; right: 0; height: 2px;
-      background: var(--gold); transform: scaleX(0);
-      transform-origin: left; transition: transform 0.35s;
-    }
+    .sectors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
+    .sector-card { background: var(--navy); padding: 2.5rem 2rem; transition: background 0.3s; position: relative; overflow: hidden; }
+    .sector-card::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.35s; }
     .sector-card:hover { background: var(--navy-light); }
     .sector-card:hover::before { transform: scaleX(1); }
-    .sector-icon {
-      font-size: 2.2rem; margin-bottom: 1.2rem; display: block;
-    }
-    .sector-name {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--white); margin-bottom: 0.8rem;
-    }
+    .sector-icon { font-size: 2.2rem; margin-bottom: 1.2rem; display: block; }
+    .sector-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white); margin-bottom: 0.8rem; }
     .sector-card p { font-size: 0.88rem; font-weight: 300; line-height: 1.7; color: var(--text-body); }
 
-    /* ── APPROACH ── */
+    /* APPROACH */
     #approach { background: var(--navy-mid); }
-    .approach-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 5rem; align-items: start; margin-top: 4rem;
-    }
-    .approach-steps { display: flex; flex-direction: column; gap: 0; }
-    .step {
-      display: flex; gap: 2rem; padding: 2rem 0;
-      border-bottom: 1px solid var(--border);
-      transition: background 0.2s;
-    }
+    .approach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-top: 4rem; }
+    .approach-steps { display: flex; flex-direction: column; }
+    .step { display: flex; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); }
     .step:first-child { border-top: 1px solid var(--border); }
-    .step-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.5rem; font-weight: 300; color: var(--gold-dim);
-      line-height: 1; flex-shrink: 0; width: 40px;
-    }
-    .step-content h3 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1rem; font-weight: 600; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--white); margin-bottom: 0.5rem;
-    }
+    .step-num { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; color: var(--gold-dim); line-height: 1; flex-shrink: 0; width: 40px; }
+    .step-content h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 0.5rem; }
     .step-content p { font-size: 0.9rem; font-weight: 300; line-height: 1.7; color: var(--text-body); }
-    .approach-aside {
-      background: var(--navy-light); padding: 3rem;
-      border: 1px solid var(--border); position: relative;
-    }
-    .approach-aside::before {
-      content: '"'; position: absolute; top: -1.5rem; left: 2rem;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 8rem; font-weight: 300; color: var(--gold); line-height: 1; opacity: 0.3;
-    }
-    .approach-aside blockquote {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem; font-weight: 300; font-style: italic;
-      color: var(--cream); line-height: 1.5; margin-bottom: 1.5rem;
-    }
-    .approach-aside cite {
-      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--gold); font-style: normal;
-    }
+    .approach-aside { background: var(--navy-light); padding: 3rem; border: 1px solid var(--border); position: relative; }
+    .approach-aside::before { content: '"'; position: absolute; top: -1.5rem; left: 2rem; font-family: 'Cormorant Garamond', serif; font-size: 8rem; font-weight: 300; color: var(--gold); line-height: 1; opacity: 0.3; }
+    .approach-aside blockquote { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300; font-style: italic; color: var(--cream); line-height: 1.5; margin-bottom: 1.5rem; }
+    .approach-aside cite { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-style: normal; }
     .criteria-list { margin-top: 2.5rem; }
-    .criteria-list h4 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--gold); margin-bottom: 1rem;
-    }
+    .criteria-list h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
     .criteria-list ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
-    .criteria-list li {
-      font-size: 0.9rem; font-weight: 300; color: var(--text-body);
-      display: flex; align-items: flex-start; gap: 0.75rem; line-height: 1.5;
-    }
+    .criteria-list li { font-size: 0.9rem; font-weight: 300; color: var(--text-body); display: flex; align-items: flex-start; gap: 0.75rem; line-height: 1.5; }
     .criteria-list li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
 
-    /* ── WHY ── */
+    /* WHY */
     #why { background: var(--navy); }
-    .why-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 4rem;
-    }
+    .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 4rem; }
     .why-card { text-align: left; }
-    .why-card-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1rem; font-weight: 300; color: var(--gold-dim);
-      letter-spacing: 0.1em; margin-bottom: 1.2rem;
-    }
-    .why-card h3 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1.05rem; font-weight: 600; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--white); margin-bottom: 0.8rem;
-    }
+    .why-card-num { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 300; color: var(--gold-dim); letter-spacing: 0.1em; margin-bottom: 1.2rem; }
+    .why-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white); margin-bottom: 0.8rem; }
     .why-card p { font-size: 0.88rem; font-weight: 300; line-height: 1.7; color: var(--text-body); }
 
-    /* ── CONTACT ── */
-    #contact {
-      background: var(--navy-mid);
-      border-top: 1px solid var(--border);
-    }
-    .contact-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start;
-    }
+    /* CONTACT */
+    #contact { background: var(--navy-mid); border-top: 1px solid var(--border); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
     .contact-info { margin-top: 2rem; }
     .contact-item { margin-bottom: 2rem; }
-    .contact-item-label {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem;
-    }
-    .contact-item-value {
-      font-size: 1rem; font-weight: 300; color: var(--cream); line-height: 1.5;
-    }
+    .contact-item-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+    .contact-item-value { font-size: 1rem; font-weight: 300; color: var(--cream); line-height: 1.5; }
     .contact-form { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 2rem; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
     .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
-    .form-group label {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.15em;
-      text-transform: uppercase; color: var(--text-body);
-    }
-    .form-group input, .form-group textarea, .form-group select {
-      background: var(--navy-light); border: 1px solid var(--border);
-      color: var(--cream); padding: 0.85rem 1rem;
-      font-family: 'Barlow', sans-serif; font-size: 0.9rem; font-weight: 300;
-      outline: none; transition: border-color 0.25s; resize: vertical;
-    }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-      border-color: var(--gold);
-    }
+    .form-group label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-body); }
+    .form-group input, .form-group textarea, .form-group select { background: var(--navy-light); border: 1px solid var(--border); color: var(--cream); padding: 0.85rem 1rem; font-family: 'Barlow', sans-serif; font-size: 0.9rem; font-weight: 300; outline: none; transition: border-color 0.25s; resize: vertical; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--gold); }
     .form-group select option { background: var(--navy-mid); }
     .form-group textarea { min-height: 120px; }
-    .form-submit {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em;
-      text-transform: uppercase; color: var(--navy);
-      background: var(--gold); border: none; padding: 1.1rem 2.5rem;
-      cursor: pointer; transition: background 0.25s, transform 0.2s;
-      align-self: flex-start;
-    }
+    .form-submit { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--navy); background: var(--gold); border: none; padding: 1.1rem 2.5rem; cursor: pointer; transition: background 0.25s, transform 0.2s; align-self: flex-start; }
     .form-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
 
-    /* ── FOOTER ── */
-    footer {
-      background: var(--navy); border-top: 1px solid var(--border);
-      padding: 2.5rem 5%; display: flex; align-items: center;
-      justify-content: space-between; flex-wrap: wrap; gap: 1rem;
-    }
-    .footer-logo {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 1rem; font-weight: 600; letter-spacing: 0.15em;
-      text-transform: uppercase; color: var(--gold);
-    }
+    footer { background: var(--navy); border-top: 1px solid var(--border); padding: 2.5rem 5%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
     .footer-logo span { color: var(--cream-dim); font-weight: 300; }
-    .footer-copy {
-      font-size: 0.78rem; font-weight: 300;
-      color: var(--text-body); letter-spacing: 0.05em;
-    }
-    .footer-loc {
-      font-size: 0.78rem; font-weight: 300; color: var(--text-body);
-      display: flex; align-items: center; gap: 0.5rem;
-    }
+    .footer-copy { font-size: 0.78rem; font-weight: 300; color: var(--text-body); letter-spacing: 0.05em; }
+    .footer-loc { font-size: 0.78rem; font-weight: 300; color: var(--text-body); display: flex; align-items: center; gap: 0.5rem; }
     .footer-loc::before { content: '📍'; font-size: 0.75rem; }
 
-    /* ── DECORATIVE LINE ── */
-    .gold-line { width: 60px; height: 2px; background: var(--gold); margin: 1.5rem 0; }
-
-    /* ── ANIMATIONS ── */
-    @keyframes fadeUp {
-      from { opacity:0; transform:translateY(30px); }
-      to   { opacity:1; transform:translateY(0); }
-    }
-    @keyframes fadeLeft {
-      from { opacity:0; transform:translateX(30px); }
-      to   { opacity:1; transform:translateX(0); }
-    }
-    .reveal {
-      opacity: 0; transform: translateY(25px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeLeft { from { opacity:0; transform:translateX(30px); } to { opacity:1; transform:translateX(0); } }
+    .reveal { opacity: 0; transform: translateY(25px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-photo-wrap { display: none; }
       .about-grid, .approach-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
       .sectors-grid { grid-template-columns: 1fr 1fr; }
       .why-grid { grid-template-columns: 1fr 1fr; }
-      .hero-stats { display: none; }
       .form-row { grid-template-columns: 1fr; }
       .nav-links { display: none; }
     }
     @media (max-width: 560px) {
-      .sectors-grid, .why-grid { grid-template-columns: 1fr; }
+      .sectors-grid, .why-grid, .about-stats { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">Steadfast <span>Holdings, LLC</span></a>
+    <a href="file:///Users/homemac/Downloads/index_8.html#" class="nav-logo">Steadfast <span>Holdings, LLC</span></a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#sectors">Sectors</a></li>
-      <li><a href="#approach">Our Approach</a></li>
-      <li><a href="#why">Why Us</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="file:///Users/homemac/Downloads/index_8.html#about">About Craig</a></li>
+      <li><a href="file:///Users/homemac/Downloads/index_8.html#sectors">Sectors</a></li>
+      <li><a href="file:///Users/homemac/Downloads/index_8.html#approach">My Process</a></li>
+      <li><a href="file:///Users/homemac/Downloads/index_8.html#why">Why Me</a></li>
+      <li><a href="file:///Users/homemac/Downloads/index_8.html#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Start a Conversation</a>
+    <a href="file:///Users/homemac/Downloads/index_8.html#contact" class="nav-cta">Talk to Craig</a>
   </nav>
 
   <!-- HERO -->
@@ -414,157 +181,167 @@
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Minnesota · Business Acquisitions</p>
+      <p class="hero-eyebrow">Minnesota · Small Business Buyer</p>
       <h1 class="hero-title">
-        Building<br><em>Lasting Value</em><br>in Essential Services
+        I Invest In &amp;<br><em>Grow Service</em><br>Businesses
       </h1>
       <p class="hero-desc">
-        Steadfast Holdings, LLC partners with established small businesses across the services sector — providing owners with trusted pathways to transition their life's work while securing lasting legacies for employees, customers, and communities.
+        I'm Craig Holst — an experienced executive and investor focused on acquiring and growing service businesses. If you're thinking about a transition, I'd like to be the person you talk to.
       </p>
       <div class="hero-actions">
-        <a href="#sectors" class="btn-primary">Explore Our Focus</a>
-        <a href="#contact" class="btn-secondary">Sell Your Business</a>
+        <a href="file:///Users/homemac/Downloads/index_8.html#contact" class="btn-primary">Let's Talk</a>
+        <a href="file:///Users/homemac/Downloads/index_8.html#about" class="btn-secondary">About Craig</a>
       </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">5+</div>
-        <div class="stat-label">Service Sectors</div>
-        <div class="stat-divider"></div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">MN</div>
-        <div class="stat-label">Based & Focused</div>
-        <div class="stat-divider"></div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img src="data:image/jpeg;base64,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" alt="Craig Holst">
+        <div class="hero-photo-badge">
+          <div class="hero-photo-badge-name">Craig Holst</div>
+          <div class="hero-photo-badge-title">Founder, Steadfast Holdings LLC</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT CRAIG -->
   <section id="about">
-    <div class="section-label">About</div>
+    <div class="section-label">About Craig</div>
     <div class="about-grid">
       <div class="about-text">
-        <h2 class="section-title">A Trusted Partner<br>for <em>Business Transitions</em></h2>
+        <h2 class="section-title">You're Talking to<br><em>the Buyer</em></h2>
         <div class="gold-line"></div>
-        <p>Steadfast Holdings, LLC is a Minnesota-based business acquisition and investment firm focused exclusively on small businesses within the essential services sector. We understand the decades of hard work, trust, and relationships that go into building a thriving trade business.</p>
-        <p>Our approach is <strong>relationship-first</strong>. We work closely with business owners to understand their goals — whether that's a clean exit, a gradual transition, or continued involvement — and we structure every deal accordingly.</p>
-        <p>We are committed to <strong>preserving what makes each business great</strong>: its people, its reputation, and its community relationships.</p>
+        <p>I'm not a private equity firm. I'm not a broker. I'm Craig — a results-driven executive with a career built on leading high-performing teams, scaling revenue, and driving profitable growth. I'm focused on acquiring and investing in service businesses and building on what their owners have created.</p>
+        <p>I've spent my career with <strong>full P&amp;L responsibility for $70M+ in revenue</strong>, closing 20+ multi-million dollar deals, and leading sizable teams across complex organizations. I know how to identify what's working in a business, where the growth opportunities are, and how to execute — without disrupting what's already running well.</p>
+        <p>When you talk to me, you're talking to someone who genuinely respects the foundation you've built and has the experience to scale and optimize it further. Your employees, your customers, and your reputation are assets I intend to grow.</p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-num">$70M+</div>
+            <div class="about-stat-label">Full P&amp;L responsibility in leadership roles</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">20+</div>
+            <div class="about-stat-label">Multi-million dollar deals closed</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">Large</div>
+            <div class="about-stat-label">Teams led across complex organizations</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">100%</div>
+            <div class="about-stat-label">Focused on scaling what you've built</div>
+          </div>
+        </div>
       </div>
       <div class="about-pillars">
         <div class="pillar">
-          <div class="pillar-title">Integrity</div>
-          <p>Transparent dealings, fair valuations, and honest communication at every stage of the acquisition process.</p>
+          <div class="pillar-title">I'm a Buyer, Not a Firm</div>
+          <p>You'll deal directly with me — no layers, no committee, no strangers. I make decisions quickly and communicate honestly throughout the process.</p>
         </div>
         <div class="pillar">
-          <div class="pillar-title">Stewardship</div>
-          <p>We acquire businesses to grow them — not strip them. Employees and customers remain our priority post-acquisition.</p>
+          <div class="pillar-title">I'm Here to Create Value</div>
+          <p>My goal is to identify growth levers, optimize operations, and expand what's already working — bringing an experienced executive lens to every business I invest in.</p>
         </div>
         <div class="pillar">
-          <div class="pillar-title">Long-Term Vision</div>
-          <p>We invest with a multi-decade horizon, focusing on sustainable growth over short-term financial engineering.</p>
+          <div class="pillar-title">I'm Financially Ready</div>
+          <p>Strong credit profile, established relationships with SBA lenders, and access to additional capital sources. I'm positioned to move efficiently from offer to close.</p>
         </div>
         <div class="pillar">
-          <div class="pillar-title">Local Roots</div>
-          <p>Proudly headquartered in Minnesota, we understand the regional market and are committed to the communities we serve.</p>
+          <div class="pillar-title">I'll Honor What You Built</div>
+          <p>Your reputation, your team, your customer relationships — these are the things that make a business valuable. I'm committed to protecting all of them.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTORS -->
   <section id="sectors">
     <div class="sectors-intro">
-      <div class="section-label">Target Sectors</div>
-      <h2 class="section-title">Where We <em>Invest</em></h2>
-      <p>We specialize in essential, recession-resilient service businesses — companies that communities depend on every day. Our deep sector expertise allows us to recognize value and support growth effectively.</p>
+      <div class="section-label">Areas of Interest</div>
+      <h2 class="section-title">Businesses I'm <em>Interested in Pursuing</em></h2>
+      <p>I'm focused on essential service businesses with stable cash flow, established customer bases, and real opportunity for growth. These are the sectors where I see the most potential and where my background adds the most value.</p>
     </div>
     <div class="sectors-grid reveal">
       <div class="sector-card">
         <span class="sector-icon">⚡</span>
         <div class="sector-name">Electrical Services</div>
-        <p>Residential and commercial electrical contractors, including specialty, solar, and EV infrastructure businesses with established customer bases and licensed teams.</p>
+        <p>Residential and commercial electrical contractors with established customer bases, licensed teams, and steady project flow.</p>
       </div>
       <div class="sector-card">
         <span class="sector-icon">🔧</span>
         <div class="sector-name">Plumbing Services</div>
-        <p>Plumbing companies serving residential, commercial, and industrial clients — from repair and maintenance to new construction and drain services.</p>
+        <p>Plumbing companies serving residential, commercial, or industrial clients with recurring maintenance and repair revenue.</p>
       </div>
       <div class="sector-card">
         <span class="sector-icon">🏠</span>
         <div class="sector-name">Home Remodeling</div>
-        <p>General contractors and specialty remodelers with proven project pipelines, strong local reputations, and experienced crews in kitchen, bath, and whole-home renovation.</p>
+        <p>General contractors and specialty remodelers with a strong local reputation, experienced crews, and a consistent project pipeline.</p>
       </div>
       <div class="sector-card">
         <span class="sector-icon">🪵</span>
         <div class="sector-name">Flooring</div>
-        <p>Installation and flooring businesses covering hardwood, tile, luxury vinyl, carpet, and commercial flooring with recurring residential and commercial accounts.</p>
+        <p>Flooring installation businesses with recurring residential and commercial accounts across hardwood, tile, vinyl, and carpet.</p>
+      </div>
+      <div class="sector-card">
+        <span class="sector-icon">🚗</span>
+        <div class="sector-name">Automotive Repair</div>
+        <p>Independent auto repair shops and service centers with loyal customer bases, skilled technicians, and consistent repeat business.</p>
       </div>
       <div class="sector-card" style="background: var(--navy-light);">
         <span class="sector-icon">💼</span>
-        <div class="sector-name">Adjacent Services</div>
-        <p>We also evaluate compelling opportunities in adjacent essential service verticals not listed here. If you own a service business in Minnesota, we'd like to hear your story.</p>
+        <div class="sector-name">Other Service Businesses</div>
+        <p>Own a service business that doesn't fit neatly above? Reach out anyway. If it's a solid, cash-flowing business with a good team, I want to hear about it.</p>
       </div>
     </div>
   </section>
 
   <!-- APPROACH -->
   <section id="approach">
-    <div class="section-label">Our Process</div>
-    <h2 class="section-title">A Straightforward<br><em>Acquisition Process</em></h2>
+    <div class="section-label">My Process</div>
+    <h2 class="section-title">How I Work with<br><em>Sellers</em></h2>
     <div class="approach-grid">
       <div class="approach-steps reveal">
         <div class="step">
           <div class="step-num">01</div>
           <div class="step-content">
-            <h3>Initial Conversation</h3>
-            <p>We start with a confidential, no-obligation discussion to understand your business, your goals, and your timeline. No pressure — just honest dialogue.</p>
+            <h3>A Real Conversation First</h3>
+            <p>I start with a confidential, no-pressure call. I want to understand your business, your timeline, and what a good outcome looks like for you — before we ever talk numbers.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">02</div>
           <div class="step-content">
-            <h3>Preliminary Valuation</h3>
-            <p>We review basic financials and provide an indicative offer range quickly — typically within one to two weeks — so you know where things stand early.</p>
+            <h3>Respectful Due Diligence</h3>
+            <p>I move quickly and keep things confidential. I respect your time and your business, and I won't drag out the process or make it harder than it needs to be.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">03</div>
           <div class="step-content">
-            <h3>Due Diligence</h3>
-            <p>A collaborative, respectful review of your operations, financials, and contracts. We move efficiently and respect your time and confidentiality.</p>
+            <h3>A Deal That Works for You</h3>
+            <p>I'm flexible on structure — seller financing, earnouts, phased transitions. I want to close a deal that genuinely works for both of us, not just get it done.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num">04</div>
           <div class="step-content">
-            <h3>Offer & Close</h3>
-            <p>We structure deals that work for you — including seller financing, earnouts, or continued involvement — and close on agreed timelines.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-num">05</div>
-          <div class="step-content">
-            <h3>Transition Support</h3>
-            <p>We work alongside you during transition to preserve customer relationships, support your team, and ensure business continuity.</p>
+            <h3>I'll Be There for the Handoff</h3>
+            <p>I'll work alongside you through the transition to protect customer relationships and support your team. You won't feel like you just dropped the keys and walked away.</p>
           </div>
         </div>
       </div>
       <div class="approach-aside reveal">
-        <blockquote>
-          "We treat every acquisition like we're buying something worth protecting — because we are."
-        </blockquote>
-        <cite>— Steadfast Holdings, LLC</cite>
+        <blockquote>"When you sell to me, you're handing your business to a person — not a portfolio."</blockquote>
+        <cite>— Craig Holst, Steadfast Holdings</cite>
         <div class="criteria-list">
-          <h4>Typical Acquisition Criteria</h4>
+          <h4>What I'm Typically Looking For</h4>
           <ul>
             <li>Minnesota-based service businesses</li>
             <li>$500K – $10M in annual revenue</li>
-            <li>Established customer base and recurring work</li>
+            <li>$500K – $1M in seller's discretionary earnings</li>
+            <li>Established team and recurring customer base</li>
             <li>2+ years of operating history</li>
-            <li>Owner looking to retire, transition, or exit</li>
-            <li>Strong reputation in local market</li>
-            <li>Licensed and insured operations</li>
+            <li>Owner ready to retire, transition, or step back</li>
+            <li>Strong local reputation</li>
           </ul>
         </div>
       </div>
@@ -573,28 +350,28 @@
 
   <!-- WHY -->
   <section id="why">
-    <div class="section-label">Why Steadfast</div>
-    <h2 class="section-title">What Sets Us <em>Apart</em></h2>
+    <div class="section-label">Why Work With Me</div>
+    <h2 class="section-title">What Makes Me<br><em>Different</em></h2>
     <div class="why-grid">
       <div class="why-card reveal">
         <div class="why-card-num">01</div>
-        <h3>No Brokers Required</h3>
-        <p>Work directly with decision-makers. No intermediaries means faster timelines, lower friction, and more honest conversations.</p>
+        <h3>You Deal With Me Directly</h3>
+        <p>No brokers, no committees, no middlemen. You'll have my personal number and talk to me throughout the entire process.</p>
       </div>
       <div class="why-card reveal">
         <div class="why-card-num">02</div>
-        <h3>Sector-Specific Knowledge</h3>
-        <p>We focus exclusively on service businesses, so we understand your margins, seasonality, workforce challenges, and growth levers.</p>
+        <h3>I Know the Industry</h3>
+        <p>I'm focused on service businesses specifically — so I understand your margins, your seasonality, your team dynamics, and your customer relationships.</p>
       </div>
       <div class="why-card reveal">
         <div class="why-card-num">03</div>
-        <h3>Employee Retention Focus</h3>
-        <p>Your team built the business with you. We are committed to retaining key employees and preserving the culture you worked to create.</p>
+        <h3>I'm Here to Grow It</h3>
+        <p>I'm not a cost-cutter. I bring a background in scaling revenue and optimizing performance — your team and your customers are central to that growth.</p>
       </div>
       <div class="why-card reveal">
         <div class="why-card-num">04</div>
-        <h3>Flexible Deal Structures</h3>
-        <p>From all-cash acquisitions to earnouts and seller notes, we structure transactions that align with your financial and personal goals.</p>
+        <h3>Capital Access Is Ready</h3>
+        <p>Strong credit, established SBA lender relationships, and access to additional capital sources. I'm a serious, prepared buyer who can move when the right opportunity is in front of me.</p>
       </div>
     </div>
   </section>
@@ -604,12 +381,12 @@
     <div class="contact-grid">
       <div>
         <div class="section-label">Get In Touch</div>
-        <h2 class="section-title">Let's Start a<br><em>Conversation</em></h2>
+        <h2 class="section-title">Let's Have a<br><em>Real Conversation</em></h2>
         <div class="gold-line"></div>
         <div class="contact-info reveal">
           <div class="contact-item">
-            <div class="contact-item-label">Company</div>
-            <div class="contact-item-value">Steadfast Holdings, LLC</div>
+            <div class="contact-item-label">Who You're Contacting</div>
+            <div class="contact-item-value">Craig Holst<br><span style="font-size:0.88rem; color:var(--text-body);">Founder, Steadfast Holdings, LLC</span></div>
           </div>
           <div class="contact-item">
             <div class="contact-item-label">Location</div>
@@ -620,55 +397,37 @@
             <div class="contact-item-value"><a href="tel:4693369755" style="color:var(--cream); text-decoration:none;">(469) 336-9755</a></div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-label">Focus Area</div>
-            <div class="contact-item-value">Small Business Acquisitions<br>Essential Service Sectors</div>
-          </div>
-          <div class="contact-item">
             <div class="contact-item-label">Confidentiality</div>
-            <div class="contact-item-value">All inquiries are held in strict confidence. No obligation to proceed.</div>
+            <div class="contact-item-value">Every conversation is completely confidential. No obligation to move forward.</div>
           </div>
         </div>
       </div>
       <div class="reveal">
-        <div class="form-group" style="margin-bottom:0">
-          <p style="font-size:0.9rem; font-weight:300; color:var(--text-body); line-height:1.8; margin-bottom:1.5rem; margin-top:1.5rem;">Whether you're ready to sell or simply exploring your options, we welcome the conversation. Fill out the form and we'll be in touch within one business day.</p>
-        </div>
+        <p style="font-size:0.9rem; font-weight:300; color:var(--text-body); line-height:1.8; margin-bottom:1.5rem; margin-top:1.5rem;">Whether you're ready to sell or just starting to think about it, reach out. There's no pressure — I'm happy to have an honest conversation and answer any questions you have.</p>
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/mredllnk" method="POST">
-          <input type="hidden" name="_subject" value="New Business Inquiry — Steadfast Holdings" />
-          <input type="hidden" name="_next" value="https://steadfastholdco.com?success=true" />
-
+          <input type="hidden" name="_subject" value="New Business Inquiry — Steadfast Holdings">
+          <input type="hidden" name="_next" value="https://steadfastholdco.com?success=true">
           <div class="form-row">
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first_name" placeholder="John" required />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last_name" placeholder="Smith" required />
-            </div>
+            <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="John" required=""></div>
+            <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" required=""></div>
           </div>
+          <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="john@yourbusiness.com" required=""></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="(612) 555-0000"></div>
           <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@yourbusiness.com" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(612) 555-0000" />
-          </div>
-          <div class="form-group">
-            <label for="business-type">Business Type</label>
-            <select id="business-type" name="business_type" required>
+            <label>Business Type</label>
+            <select name="business_type" required="">
               <option value="">Select your sector…</option>
               <option>Electrical Services</option>
               <option>Plumbing Services</option>
               <option>Home Remodeling</option>
               <option>Flooring</option>
+              <option>Automotive Repair</option>
               <option>Other Service Business</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="revenue">Annual Revenue (approximate)</label>
-            <select id="revenue" name="annual_revenue">
+            <label>Annual Revenue (approximate)</label>
+            <select name="annual_revenue">
               <option value="">Select range…</option>
               <option>Under $500K</option>
               <option>$500K – $1M</option>
@@ -678,53 +437,42 @@
               <option>Over $10M</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="message">Tell Us About Your Business</label>
-            <textarea id="message" name="message" placeholder="Brief description of your business, years in operation, and what you're looking for…"></textarea>
-          </div>
-          <button type="submit" class="form-submit" id="submit-btn">Send Inquiry</button>
+          <div class="form-group"><label>Tell Me About Your Business</label><textarea name="message" placeholder="A little about your business, how long you&#39;ve been running it, and what you&#39;re looking for…"></textarea></div>
+          <button type="submit" class="form-submit">Send Message to Craig</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-logo">Steadfast <span>Holdings, LLC</span></div>
     <div class="footer-loc">Minnesota, United States</div>
-    <div class="footer-copy">© 2025 Steadfast Holdings, LLC · All rights reserved</div>
+    <div class="footer-copy">© 2026 Steadfast Holdings, LLC · All rights reserved</div>
   </footer>
 
   <script>
-    // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 80);
-          observer.unobserve(e.target);
-        }
+        if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); observer.unobserve(e.target); }
       });
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
 
-    // Nav shrink on scroll
     const nav = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-      nav.style.padding = window.scrollY > 60 ? '1rem 5%' : '1.5rem 5%';
-    });
+    window.addEventListener('scroll', () => { nav.style.padding = window.scrollY > 60 ? '1rem 5%' : '1.5rem 5%'; });
 
-    // Show success banner if redirected back after form submission
     if (window.location.search.includes('success=true')) {
       const contact = document.getElementById('contact');
       if (contact) {
         const banner = document.createElement('div');
         banner.style.cssText = 'background:var(--navy-light);border:1px solid var(--gold);padding:2rem;margin-bottom:2rem;';
-        banner.innerHTML = '<p style="font-family:\'Barlow Condensed\',sans-serif;font-size:1rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">✓ Inquiry Received</p><p style="font-size:0.9rem;font-weight:300;color:var(--text-body);line-height:1.7;">Thank you for reaching out. Craig will be in touch within one business day. All information is kept strictly confidential.</p>';
+        banner.innerHTML = '<p style="font-family:\'Barlow Condensed\',sans-serif;font-size:1rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;">✓ Message Sent</p><p style="font-size:0.9rem;font-weight:300;color:var(--text-body);line-height:1.7;">Thanks for reaching out. Craig will be in touch personally within one business day.</p>';
         contact.insertBefore(banner, contact.firstChild);
         contact.scrollIntoView({ behavior: 'smooth' });
       }
     }
   </script>
-</body>
-</html>
+
+
+</body></html>
